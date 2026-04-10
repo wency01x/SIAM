@@ -1,8 +1,8 @@
-# 📦 Software Implementation Management
+# Software Implementation Management
 
 > A course repository tracking implementation milestones across Weeks 10–17.
 
-## 👥 Contributors
+## Contributors
 
 | Name | Role |
 |------|------|
@@ -13,21 +13,21 @@
 
 ---
 
-## 📅 Weekly Milestones
+## Weekly Milestones
 
-### ✅ Week 10–11 (Current)
+### Week 10–11 (Current)
 | Task | Status |
 |------|--------|
 | CI/CD Upgrade (Continuous Deployment + Smoke Tests) | 🔄 In Progress |
 | Software Security (Secure Coding Basics) | 🔄 In Progress |
 
-### 🔜 Week 12
+### Week 12
 - Ethical, Legal, IP, Professional Issues
 
-### 🔜 Week 13
+### Week 13
 - KPIs, Metrics, Monitoring, Data-driven Decisions
 
-### 🔜 Week 14–17
+### Week 14–17
 - Cost–Benefit + Cost Estimation Models
 - DevOps + Cloud Integration + Emerging Trends (Capstone)
 
@@ -59,7 +59,7 @@ sim-repo/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ```bash
 # Clone the repository
@@ -78,7 +78,7 @@ git push origin main
 
 ---
 
-## 📄 Documentation
+## Documentation
 - [CI/CD Diagram](docs/cicd-diagram.md)
 - [Security Checklist](docs/security-checklist.md)
 - [Risk Register](docs/risk-register.md)
