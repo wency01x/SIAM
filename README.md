@@ -33,7 +33,7 @@
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 sim-repo/
