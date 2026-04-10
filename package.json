@@ -1,0 +1,26 @@
+{
+  "name": "software-implementation-management",
+  "version": "1.0.0",
+  "description": "Course repository for Software Implementation Management (Week 10–17)",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "audit": "npm audit"
+  },
+  "jest": {
+    "testMatch": [
+      "**/smoke-tests/**/*.test.js",
+      "**/*.test.js"
+    ]
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "keywords": [
+    "SIM",
+    "CI/CD",
+    "security",
+    "devops"
+  ],
+  "license": "MIT"
+}

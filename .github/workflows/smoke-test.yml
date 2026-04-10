@@ -1,0 +1,19 @@
+name: Smoke Tests
+
+on:
+  workflow_run:
+    workflows: ["CI/CD – Auto Deploy on Push"]
+    types:
+      - completed
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci
+      - run: npm test -- --testPathPattern=smoke
