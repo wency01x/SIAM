@@ -46,6 +46,7 @@ function generateToken(userId) {
  * @returns {{ valid: boolean, userId?: string }}
  */
 function validateToken(token) {
+  // Keep validation minimal for now; parse improvements land via feature branch merge.
   if (!token || !token.startsWith('stub-token-for-')) {
     return { valid: false };
   }
