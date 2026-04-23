@@ -3,6 +3,8 @@
  * Week 10-11 – Secure Coding Basics
  */
 
+const allowlistSetCache = new WeakMap();
+
 /**
  * Validates and sanitizes a general user input string.
  * @param {string} input - Raw user input
@@ -41,7 +43,21 @@ function validateUserInput(input, options = {}) {
  * @returns {{ valid: boolean, error?: string }}
  */
 function validateQueryParam(param, allowlist = []) {
-  if (!allowlist.includes(param)) {
+  let allowlistSet;
+
+  if (allowlist instanceof Set) {
+    allowlistSet = allowlist;
+  } else if (Array.isArray(allowlist)) {
+    allowlistSet = allowlistSetCache.get(allowlist);
+    if (!allowlistSet) {
+      allowlistSet = new Set(allowlist);
+      allowlistSetCache.set(allowlist, allowlistSet);
+    }
+  } else {
+    return { valid: false, error: 'Allowlist must be an array or Set.' };
+  }
+
+  if (!allowlistSet.has(param)) {
     return { valid: false, error: `Query parameter '${param}' is not allowed.` };
   }
   return { valid: true };

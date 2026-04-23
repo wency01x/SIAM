@@ -4,8 +4,10 @@
   "description": "Course repository for Software Implementation Management (Week 10–17)",
   "main": "src/index.js",
   "scripts": {
+    "start": "node src/index.js",
     "test": "jest --coverage",
-    "audit": "npm audit"
+    "audit": "npm audit",
+    "bench:validation": "node benchmarks/validate-query.bench.js"
   },
   "jest": {
     "testMatch": [
