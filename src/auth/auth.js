@@ -46,10 +46,26 @@ function generateToken(userId) {
  * @returns {{ valid: boolean, userId?: string }}
  */
 function validateToken(token) {
-  if (!token || !token.startsWith('stub-token-for-')) {
+  const prefix = 'stub-token-for-';
+  if (!token || !token.startsWith(prefix)) {
     return { valid: false };
   }
-  return { valid: true, userId: token.split('-')[3] };
+
+  const payload = token.slice(prefix.length);
+  const separatorIndex = payload.lastIndexOf('-');
+
+  if (separatorIndex <= 0) {
+    return { valid: false };
+  }
+
+  const userId = payload.slice(0, separatorIndex);
+  const issuedAt = payload.slice(separatorIndex + 1);
+
+  if (!/^\d+$/.test(issuedAt)) {
+    return { valid: false };
+  }
+
+  return { valid: true, userId };
 }
 
 module.exports = { authenticate, generateToken, validateToken };
