@@ -2,6 +2,14 @@
 
 > A course repository tracking implementation milestones across Weeks 10–17.
 
+---
+## Members
+1. Babuyo, Harvie Lorenz C.
+2. Casiño, Wency G.
+3. Sisi, Kent Jasper C.
+4. Sorongon, Charles Juvanne
+
+---
 ## Contributors
 
 | Name | Role |
