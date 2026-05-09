@@ -47,7 +47,7 @@
 ### Phase 4: Enterprise Compliance & Final Release (Upcoming)
 | Week | Task / Deliverable | Status |
 | :--- | :--- | :--- |
-| **Week 12** | Ethical, Legal, IP, & Professional Issues (Privacy Notes, Licenses) | ⏳ Pending |
+| **Week 12** | Ethical, Legal, IP, & Professional Issues (Privacy Notes, Licenses) | ✅ Completed |
 | **Week 13** | System Metrics (KPIs, Monitoring, Data-driven Decisions) | ⏳ Pending |
 | **Week 14** | Business Value (Cost-Benefit Analysis, Cost Estimation Models) | ⏳ Pending |
 | **Week 15** | Capstone Delivery (DevOps Cloud Integration, `v1.0` Final Tag, Demo) | ⏳ Pending |
